@@ -1,0 +1,13 @@
+<div class="techs">
+  <p-card>
+    <figure>
+      <img src="{{ card.icon }}" alt="" />
+    </figure>
+    <h2>
+      {{ card.tech_name }}
+    </h2>
+    <ng-template pTemplate="footer">
+      <h6 (click)="showTechDialog()">discover more</h6>
+    </ng-template>
+  </p-card>
+</div>
