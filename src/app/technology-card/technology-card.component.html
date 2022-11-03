@@ -1,5 +1,5 @@
 <div class="techs">
-  <p-card>
+  <p-card styleClass="ngx-color">
     <figure>
       <img src="{{ card.icon }}" alt="" />
     </figure>
@@ -7,7 +7,7 @@
       {{ card.tech_name }}
     </h2>
     <ng-template pTemplate="footer">
-      <h6 (click)="showTechDialog()">discover more</h6>
+      <h6 (click)="showTechDialog()">{{ card.linkname }}</h6>
     </ng-template>
   </p-card>
 </div>

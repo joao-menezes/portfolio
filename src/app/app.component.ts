@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
   private angular_name = "Angular"
   private typescript_icon = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
   private typescript_name = "Typescript"
+  private mysql_icon = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
+  private mysql_name = "MySQL"
   cards: TechnologyInterface[] = [];
   display: boolean = false;
 
@@ -42,6 +44,7 @@ export class AppComponent implements OnInit {
       ...this.loadNodeJs(),
       ...this.loadAngular(),
       ...this.loadTypescript(),
+      ...this.loadMySql()
     ]
   }
 
@@ -49,7 +52,7 @@ export class AppComponent implements OnInit {
     return [{
       icon: this.spring_icon,
       tech_name: this.spring_name,
-
+      linkname: 'discover more'
     }];
 
   }
@@ -57,21 +60,31 @@ export class AppComponent implements OnInit {
   loadNodeJs() {
     return [{
       icon: this.node_icon,
-      tech_name: this.node_name
+      tech_name: this.node_name,
+      linkname: 'discover more'
     }];
   }
 
   loadAngular() {
     return [{
       icon: this.angular_icon,
-      tech_name: this.angular_name
+      tech_name: this.angular_name,
+      linkname: 'discover more'
     }];
   }
 
   loadTypescript() {
     return [{
       icon: this.typescript_icon,
-      tech_name: this.typescript_name
+      tech_name: this.typescript_name,
+      linkname: 'discover more'
+    }];
+  }
+
+  loadMySql() {
+    return [{
+      icon: this.mysql_icon,
+      tech_name: this.mysql_name
     }];
   }
 }
